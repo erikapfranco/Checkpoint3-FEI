@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Fonte - ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/style2.css" rel="stylesheet">
+    <title>DHFlix | 007 - No Time To Die</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand px-4" href="#">
+                    <img src="./imgs/logo-dh.png" alt="" width="auto" height="auto">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" id="link1" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html#movies">Filmes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Sobre nós</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#login-box" data-bs-toggle="modal"
+                                data-bs-target="#login-box">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Início Modal -->
+        <div class="modal fade" id="login-box" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-login">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <img class="modal-title" src="./imgs/logo-dh.png" alt="Logo Digital House" width="auto"
+                            height="auto" style="margin: 0 auto;">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="email" type="email" placeholder="Digite seu e-mail"
+                                    required="required">
+                                <label for="email">E-mail</label>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="password" type="password" placeholder="Digite sua senha"
+                                    required="required">
+                                <label for="password">Senha</label>
+                            </div>
+
+
+                            <div class="col-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
+                                    <label class="form-check-label" for="autoSizingCheck2">
+                                        Lembrar Credenciais
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group text-center">
+                                <input type="submit" id="btn-login" class="btn btn-primary btn-block btn-lg"
+                                    value="Login">
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#" data-bs-target="#signup-form" data-bs-toggle="modal">Quero me registrar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="signup-form" aria-hidden="true" aria-labelledby="signup-form" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <h4 class="modal-title" id="signup-form">Criar Conta</h4>
+                            <p class="hint-text">Crie sua conta a partir da sua rede social</p>
+                            <div class="social-btn text-center">
+                                <a href="#" class="btn btn-primary btn-lg"><i class="fa fa-facebook"></i> Facebook</a>
+                                <a href="#" class="btn btn-info btn-lg"><i class="fa fa-twitter"></i> Twitter</a>
+                                <a href="#" class="btn btn-danger btn-lg"><i class="fa fa-google"></i> Google</a>
+                            </div>
+                            <div class="or-seperator"><b>ou</b></div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="nome" type="text" placeholder="Nome completo"
+                                    required="required">
+                                <label for="nome">Nome completo</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="email" type="email" placeholder="Nome completo"
+                                    required="required">
+                                <label for="email">E-mail</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="password" type="password" placeholder="Digite sua senha"
+                                    required="required">
+                                <label for="password">Senha</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="confirm_password" type="password"
+                                    placeholder="Confirme sua senha" required="required">
+                                <label for="confirm_password">Confirmar senha</label>
+                            </div>
+                            <div class="form-group">
+                                <label class="checkbox-inline"><input type="checkbox" required="required"> Eu aceito os
+                                    <a href="#">Termos de Uso</a> e a <a href="#">Política de Privacidade</a></label>
+                            </div>
+                            <div class="form-group text-center">
+                                <input type="submit" id="btn-login" class="btn btn-success btn-lg btn-block signup-btn"
+                                    value="Criar conta">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#" data-bs-target="#login-box" data-bs-toggle="modal">Voltar para tela de login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fim Modal -->
+
+        <!--Início carossel-->
+        <main>
+            <div id="myCarousel" class="carousel slide carousel-filme" data-bs-ride="carousel">
+                <!-- Início dos slides/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active carousel1">
+                        <div class="overlay-image w-100"
+                            style="background-image: url(./imgs/007-ss/00701.jpg)"></div>"
+                    </div>
+                    <div class="carousel-item carousel1">
+                        <div class="overlay-image w-100"
+                            style="background-image: url(./imgs/007-ss/00702.jpg)"></div>
+                    </div>
+                    <div class="carousel-item carousel1">
+                        <div class="overlay-image w-100"
+                            style="background-image: url(./imgs/007-ss/00703.jpg)"></div>
+                    </div>
+                </div>
+                <!-- Fim dos slides/carousel -->
+                <!-- Início dos botões left and right (carousel) -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                <!-- Fim dos botões left and right (carousel) -->
+            </div>
+            <!--Fim carossel-->
+
+            <!--Início filmes-->
+            <div class="movie">
+                <div class="title">
+                    <h1 class="movie-tt">007 - No Time To Die</h1>
+                    <div class="rating-movie">
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star rating-color"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+                <div class="movie-desc">
+                    <p>Em 007 - Sem Tempo Para Morrer, depois de sair do serviço ativo da MI6, James Bond (Daniel Craig) vive tranquilamente na Jamaica, mas como nem tudo dura pouco, a vida do espião 007 é agitada mais uma vez. Felix Leiter (Jeffrey Wright) é um velho amigo da CIA que procura o inglês para um pequeno favor de ajudá-lo em uma missão secreta. O que era pra ser apenas uma missão de resgate de um grupo de cientistas acaba sendo mais traiçoeira do que o esperado, levando o agente inglês 007 ao misterioso vilão, Safin (Rami Malek), que utiliza de novas armas de tecnologia avançada e extremamente perigosa.</div>
+                <div class="movie-info1">
+                    <h6 class="titles">Diretor</h6>
+                    <h6 class="titles">Escritores</h6>
+                </div>
+                <div class="movie-info2">
+                    <h6 class="titles">Cary Joji Fukunaga</h6>
+                    <h6 class="titles">Neal Purvis • Robert Wade</h6>
+                </div>
+                <div class="movie-trailer">
+                    <h3 class="trailer">Trailer</h3>
+                    <div class="iframe-trailer">
+                        <iframe src="https://www.youtube.com/embed/BIhNsAtPbPI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <!--Fim filmes-->
+
+            <!-- Início Carousel Recomendações -->
+            <div class="my-5 text-center container1">
+                <div class="row mb-1">
+                    <div class="col text-center">
+                        <h1 class="h1">Quem assistiu também gostou de:</h1>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-1 d-flex align-items-center justify-content-center">
+                        <a role="button" data-bs-target="#carousel" data-bs-slide="prev">
+                            <div class="carousel-nav-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <path
+                                        d="m88.6,121.3c0.8,0.8 1.8,1.2 2.9,1.2s2.1-0.4 2.9-1.2c1.6-1.6 1.6-4.2 0-5.8l-51-51 51-51c1.6-1.6 1.6-4.2 0-5.8s-4.2-1.6-5.8,0l-54,53.9c-1.6,1.6-1.6,4.2 0,5.8l54,53.9z" />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-10">
+                        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active carousel2">
+                                    <div class="row">
+                                        <div style="background-image:url('https://www.planocritico.com/wp-content/uploads/2015/07/118-007-quantum-solace.jpg');"
+                                            class="col-12 col-md d-flex align-items-center justify-content-center">
+                                        </div>
+                                        <div style="background-image:url('https://nerdbreak.com.br/wp-content/uploads/2015/11/spectre1.jpg');"
+                                            class="col-12 col-md d-flex align-items-center justify-content-center">
+                                        </div>
+                                        <div style="background-image:url('https://resenhandosonhos.com/wp-content/uploads/2017/10/blade-runner-01.jpg');"
+                                            class="col-12 col-md d-flex align-items-center justify-content-center"
+                                            class="col-12 col-md d-flex align-items-center justify-content-center">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item carousel2">
+                                    <div class="row">
+                                        <div style="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbFgIvcorUBxRKBt4IgQakIkZgb245Vq5ycA&usqp=CAU');"
+                                            class="col-12 col-md d-flex align-items-center justify-content-center">
+                                        </div>
+                                        <div style="background-image:url('http://2.bp.blogspot.com/-UpI4cJHjCfc/UI52thAof5I/AAAAAAAABeI/nZqSK2FMaPg/s1600/007+-+01.jpg');"
+                                            class="col-12 col-md d-flex align-items-center justify-content-center">
+                                        </div>
+                                        <div style="background-image:url('https://cdn.tlc-massive.com/shain/v1/dataservice/ResizeImage/$value?Format=%27jpg%27&Quality=85&ImageId=%27204954.jpg%27&ImageUrl=%27204954.jpg%27&EntityType=%27Item%27&EntityId=%2717244%27&Width=1920&Height=1080&device=web_browser&subscriptions=Anonymous');"
+                                            class="col-12 col-md d-flex align-items-center justify-content-center">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1 d-flex align-items-center justify-content-center"><a role="button"
+                            data-bs-target="#carousel" data-bs-slide="next">
+                            <div class="carousel-nav-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <path
+                                        d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z" />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+  
+                </div>
+            </div>
+            <!-- Fim Carousel Recomendações -->
+
+        </main>
+
+        <footer id="about" class="text-center text-white">
+            <div class="container">
+                <section class="mt-5">
+                    <div class="row text-center d-flex justify-content-center pt-5">
+                        <div class="col-md-2">
+                            <h6 class="text-uppercase font-weight-bold">
+                                <a href="./index.html" class="text-white">Home</a>
+                            </h6>
+                        </div>
+                        <div class="col-md-2">
+                            <h6 class="text-uppercase font-weight-bold">
+                                <a href="./index.html#movies" class="text-white">Filmes</a>
+                            </h6>
+                        </div>
+                        <div class="col-md-2">
+                            <h6 class="text-uppercase font-weight-bold">
+                                <a href="./about.index" class="text-white">Sobre Nós</a>
+                            </h6>
+                        </div>
+                        <div class="col-md-2">
+                            <h6 class="text-uppercase font-weight-bold">
+                                <a href="#login-box" data-bs-toggle="modal" data-bs-target="#login-box"
+                                    class="text-white">Login</a>
+                            </h6>
+                        </div>
+                    </div>
+                </section>
+                <hr class="my-4" />
+                <section class="mb-4">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-lg-8">
+                            <h4>Checkpoint desenvolvido por Erika Franco</h4>
+                            <p>
+                                Erika Franco é aluna da turma 01 (part time) do CTD. Ficou responsável por elaborar o
+                                projeto utilizando Bootstrap,
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="text-center mb-5">
+                    <a href="https://www.instagram.com/erikapfranco/"
+                        class="text-white btn btn-outline-light btn-floating m-1" target="_blank">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/erikapfranco/"
+                        class="text-white btn btn-outline-light btn-floating m-1" target="_blank">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/erikapfranco" target="_blank"
+                        class="text-white btn btn-outline-light btn-floating m-1">
+                        <i class="fa fa-github"></i>
+                    </a>
+                </section>
+                <section class="">
+                    <form action="">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-auto">
+                                <p class="pt-2">
+                                    <strong>Assine nossa newsletter:</strong>
+                                </p>
+                            </div>
+                            <div class="col-md-5 col-12">
+                                <div class="form-outline form-white mb-4">
+                                    <input type="email" id="email" class="form-control rounded" />
+                                    <label class="form-label" for="email" placeholder="Seu e-mail aqui"></label>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <button type="submit" class="btn btn-outline-light mb-4">
+                                    Assinar
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+
+            </div>
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.1)">
+                Checkpoint 3 desenvolvido em 2021 ©
+            </div>
+        </footer>
+</body>
+
+</html>

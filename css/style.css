@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Arimo:400,700');
+
+*{
+  margin:0;
+  padding:0;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav{
+  background: #FFFFFF;
+  width: 100%;
+}
+
+
+.nav-link{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;  
+}
+
+#link1{
+  color:red;
+}
+
+/* Parallax */
+
+.parallax{
+  background-image: url("../imgs/fundo-filme.jpg");
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+}
+
+.parallax-item{
+    height: 32rem;
+    color: white;
+    height:50rem;
+}
+
+.parallax-caption{
+  position:absolute;
+  left:10%;
+  right:10%;
+  text-align: center;
+  transform: translateY(-50%);
+  bottom: initial;
+  top: 50%;
+}
+
+.parallax-caption > a{
+  align-items: center;
+}
+
+.parallax-caption > h1{
+  color: #E51B3E;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 84px;
+  text-align: left;
+}
+
+.parallax-caption > p{
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: left;
+}
+
+/* Botões do Parallax */
+
+.parallax .btn-default{
+    align-items: center;
+    border: 1px solid #33BB69;
+    box-sizing: border-box;
+    border-radius: 12px;
+    background: rgba(51, 187, 105, 0.05);
+    font-size: 18px;
+    line-height: 28px;
+    width: 20%;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+}
+
+.parallax .btn-default:hover{
+  border: 1px solid #33BB69;
+  box-sizing: border-box;
+  border-radius: 12px;
+  background: #33BB69;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+}
+
+
+/* Modal de login/registro */
+
+.modal-login{
+  width: 350px;
+  margin: 30px auto;
+}
+
+.modal-login .modal-content, #signup-form .modal-content {
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+.modal-login .modal-header, #signup-form .modal-header{
+  border-bottom: none;
+  position: relative;
+  justify-content: center;
+}
+
+#btn-login {
+  margin-top: 15px;
+  min-height: 40px;
+  min-width: 80%;
+  border-radius: 3px; 
+  background: #00ce81;
+  border: none;
+  line-height: normal;
+  justify-self: center;
+}
+
+.modal-login .btn-close, #signup-form .btn-close{
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}
+
+.modal-footer{
+  background: #ecf0f1;
+  border-color: #dee4e7;
+  text-align: center;
+  margin: 0 -20px -20px;
+  border-radius: 5px;
+  font-size: 13px;
+  justify-content: center;
+}
+
+.form-control{
+  border: 0.125rem solid #ced4da;
+  font-size: 1rem;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-radius: 0;
+  border-width: 1px;
+}
+
+.form-floating > .form-control{
+  line-height: 1.25;
+  padding: 1.5rem 0;
+}
+
+.form-floating input.form-control{
+    margin-left:5px;
+}
+
+
+.modal-login .modal-footer a, #signup-form .modal-footer a{
+  color: #999;
+}
+
+#signup-form h4 {
+  text-align: center;
+  font-weight: bold;
+}
+
+#signup-form .hint-text {
+  color: #999;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#signup-form .form-group {
+  margin-bottom: 20px;
+}
+
+#signup-form .btn {        
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.or-seperator {
+  margin: 50px 0 15px;
+  text-align: center;
+  border-top: 1px solid #e0e0e0;
+}
+
+.or-seperator b {
+  padding: 0 10px;
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 40px;
+  background: #fff;
+  display: inline-block;
+  border: 1px solid #e0e0e0;
+  border-radius: 50%;
+  position: relative;
+  top: -22px;
+  z-index: 1;
+}
+
+.social-btn .btn {
+  color: #fff;
+  font-size: 15px;
+  border-radius: 50px;
+  font-weight: normal;
+  border: none;
+  transition: all 0.4s;
+}	
+
+.social-btn .btn:first-child {
+  margin-left: 0;
+}
+
+.social-btn .btn:hover {
+  opacity: 0.8;
+}
+
+.social-btn .btn-primary {
+  background: #507cc0;
+}
+
+.social-btn .btn-info {
+  background: #64ccf1;
+}
+
+.social-btn .btn-danger {
+  background: #df4930;
+}
+
+.social-btn .btn i {
+  float: left;
+  margin: 3px 10px;
+  font-size: 20px;
+}
+
+.signup-btn {
+  text-align: center;
+  border-color: #5cb85c;
+  transition: all 0.4s;
+}
+.signup-btn:hover {
+  background: #5cb85c;
+  opacity: 0.8;
+}
+
+
+/* Filmes (cards) */
+
+.movie-box{
+    width: 33%;
+}
+
+.name-section{
+  margin-top:20px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 64px;
+}
+
+.main-movie{
+	display: block;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 40px;
+	border-radius: 30px;
+	height: 530px;
+	width: 300px;
+	background: white;
+  box-shadow: 0px 20px 100px rgba(0,0,0,0.1);
+}
+
+.backimg{
+  width: 280px;
+	height: 280px;
+	margin-left: 10px;
+	margin-top:10px;
+	border-radius: 30px 30px 10px 30px;
+}
+
+.main-movie{
+  -webkit-transition:all .9s ease; 
+  -moz-transition:all .9s ease; 
+  -o-transition:all .9s ease;
+  -ms-transition:all .9s ease; 
+  opacity:0.7;
+}
+
+.main-movie:hover{
+  opacity: 1;
+  transform:scale(1.15);
+}
+
+.movie-cover{
+	position:absolute;
+	margin-left: -260px;
+  width:90px;
+	height: 130px;
+	margin-top: 230px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+}
+
+.fa-play{
+	position: absolute;
+	margin-top: 270px;
+	font-size: 0.6em;
+	background: #dc2c29;
+	color: white;
+	border-radius: 60px;
+  border: 0px;
+	padding: 15px;
+	margin-left: -45px;
+  text-decoration: none;
+}
+
+.fa-play:hover{
+  position: absolute;
+	margin-top: 270px;
+	font-size: 0.6em;
+	background: #FFFFFF;
+  border: 1px solid gray;
+	color: #dc2c29;
+	border-radius: 60px;
+	padding: 15px;
+	margin-left: -45px;
+  transform:scale(1.15);
+  text-decoration: none;
+}
+
+.main-movie h6 {
+	position:absolute;
+	margin-left: 130px;
+	margin-top: 25px;
+	font-size: 1em;
+	font-family: sans-serif;
+  font-weight: bold;
+}
+
+.rating{
+	height: 10px;
+	margin-left: 130px;
+	margin-top: 45px;
+  color:#FBE159;
+}
+
+.movie-description>p{
+  font-weight: none;
+  text-align: center;
+	height: 30px;
+	width: auto;
+  font-size: 14px;
+	margin: 10% 5%;
+}
+
+/* Página filme*/
+
+.carousel-filme{
+  width: 100%;
+  height: 82vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carousel1{
+    height: rem;
+    background: #777;
+    color: white;
+    height:50rem;
+}
+
+.overlay-image{
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    top:0;
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
+    height:100%;
+}
+
+.rating-movie{
+	height: 100px;
+  margin:5px;
+  color:#FBE159;
+}
+
+.movie{
+  max-width: 84%;
+  margin-top:5%;
+  margin-left: 122px;
+}
+
+.movie-tt{
+  font-style: normal;
+  font-weight: 900;
+  font-size: 64px;
+}
+
+.movie-desc{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.movie-info1{
+	column-count:2;
+	height: 30px;
+	margin-top: 60px;
+}
+.movie-info1 h6{
+	color: rgba(0,0,0);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.movie-info2{
+	column-count:2;
+	height: 30px;
+	width: auto;
+	margin-top: 10px;
+}
+
+.movie-info2 h6{
+	color: rgba(0,0,0,1);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(0, 133, 255, 0.75);
+}
+
+.movie-trailer{
+  margin-top: 84px;
+  margin-bottom: 32px;
+}
+
+.iframe-trailer{
+  text-align: center;
+}
+
+iframe{
+  width:1600px;
+  height:680px;
+}
+
+.carousel-nav-icon {
+  height: 48px;
+  width: 48px;
+}
+
+.carousel2 .col, .carousel2 .col-sm, .carousel2 .col-md {
+  margin: 8px;
+  height: 300px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.h1 {
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 700;
+}
+/* Footer */
+
+footer{
+  background-color: #171717
+}
+
+/* Media query */
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 930px){
+    .parallax .btn-default{
+        width: auto;
+    }
+    .movie-box{
+      margin-left: 30px;
+      align-items: center;
+      width: auto;
+    }
+    .carousel{
+    width: 100%;
+    height: auto;
+    }
+
+    .overlay-image{
+      height:auto;
+    }
+
+    .movie{
+      width:auto;
+      height:auto;
+      margin:auto;
+    }
+
+    .movie-tt{
+      margin-top: 15px;
+      font-size:3rem;
+    }
+
+    .movie-info2{
+      height: auto;
+    }
+
+    iframe{
+      width:auto;
+      height:auto;
+    }
+
+}
