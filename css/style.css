@@ -12,9 +12,18 @@ html {
   scroll-behavior: smooth;
 }
 
-nav{
+.nav-bar{
   background: #FFFFFF;
-  width: 100%;
+  width: auto;
+  margin:0;
+  padding:0;
+  border:none;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.fixed-top{
+  z-index: 99999;
 }
 
 
@@ -409,7 +418,7 @@ nav{
 }
 
 .movie{
-  max-width: 84%;
+  max-width: auto;
   margin-top:5%;
   margin-left: 122px;
 }
@@ -466,19 +475,14 @@ nav{
   text-align: center;
 }
 
-iframe{
-  width:1600px;
-  height:680px;
-}
-
 .carousel-nav-icon {
-  height: 48px;
-  width: 48px;
+  height: 20px;
+  width: 20px;
 }
 
 .carousel2 .col, .carousel2 .col-sm, .carousel2 .col-md {
-  margin: 8px;
-  height: 300px;
+  margin: 5px;
+  height: 200px;
   background-size: cover;
   background-position: center center;
 }
@@ -490,14 +494,27 @@ iframe{
 /* Footer */
 
 footer{
-  background-color: #171717
+  background-color: #171717;
 }
 
 /* Media query */
 
 @media only screen 
-  and (min-device-width: 320px) 
+  and (min-device-width: 300px) 
   and (max-device-width: 930px){
+    navbar {
+      background: #FFFFFF;
+      justify-content: space-between;
+    }
+
+    .container1{
+      width:auto;
+    }
+
+    .container-fluid{
+      width:auto;
+    }
+
     .parallax .btn-default{
         width: auto;
     }
@@ -518,7 +535,7 @@ footer{
     .movie{
       width:auto;
       height:auto;
-      margin:auto;
+      margin:20px;;
     }
 
     .movie-tt{
@@ -531,9 +548,8 @@ footer{
       width: auto;
     }
 
-    iframe{
-      width:auto;
-      height:auto;
+    html, body {
+      overflow-x: hidden;
     }
 
 }
