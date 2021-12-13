@@ -64,7 +64,7 @@ html {
   text-align: center;
   transform: translateY(-50%);
   bottom: initial;
-  top: 50%;
+  top: 450px;
 }
 
 .parallax-caption > a{
